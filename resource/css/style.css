@@ -1,0 +1,470 @@
+/* 
+	Orenge color: #e67e22
+*/
+
+
+/* ------------------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------------------ */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+	font-weight: 300px;
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.hero-text-box {
+	margin: 90px;
+}
+
+.underline,
+.sections-steps .underline,
+.section-cities .underline,
+.section-plans .underline,
+.section-form .underline {
+	color:  #e67e22;
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.containter-box {
+	display: flex;
+	align-content: space-around;
+	align-items: center;
+	margin: 5% 10%;
+}
+
+.box-item {
+	overflow: visible;
+	line-height: 140%;
+	margin: 0 12px;
+}
+
+/* ------------------------------------------------------ */
+/* Cities */
+/* ------------------------------------------------------ */
+
+.section-cities {
+	margin-top: 5% ;
+	padding-bottom: 120px;
+}
+
+.cities {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 5.2%;
+}
+
+.info ul { padding-top: 10px; }
+.info ul li {
+	font-size: 17px;
+	font-style: normal;
+	padding: 10px 0 0 10px;
+}
+
+.info ul li:nth-child(2),
+.info ul li:nth-child(3) {
+	position: relative;
+	right: 2px;
+}
+
+.info ul li a {
+	color: #e67e22;
+	text-decoration: underline;
+}
+
+.cities span { font-weight: lighter; }
+
+/* ------------------------------------------------------ */
+/* Meals */
+/* ------------------------------------------------------ */
+
+/*------------------- Image -----------------------*/
+.meal-photo {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(4, 25%);
+	position: absolute;
+	background-color: #000;
+
+}
+
+.meal-photo img {
+	position: static;
+	width: 100%;
+	height: auto;
+	/* opacity: 0.7; */
+	/* transform: scale(1.15); */
+}
+
+.app-iPhone img {
+	width: 40%;
+	height: auto;
+	float: right;
+	position: relative;
+	left: 50px;
+}
+
+.cities div figure img {
+	width: 78%;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+.reviews div figure img { 
+	border-radius: 50%;
+	width: 50px;
+	height: auto;
+	margin: 14px 0 0 20px;
+}
+
+figcaption {
+	display: inline-block;
+	position: relative;
+	right: 5%;
+	bottom: 10px;
+}
+
+/* ------------------------------------------------------ */
+/* Steps */
+/* ------------------------------------------------------ */
+
+.box-steps { display: flex; }
+
+.sections-steps {
+	background-color: #ebebeb;
+	margin-top: 42%;
+	padding: 5% 0;
+}
+
+.steps { margin: 3% 0 8% 0; }
+
+.steps div {
+	display: inline; 
+	color: #e67e22; 
+	border: 2px #e67e22 solid;
+	border-radius: 50%;
+	width: 50px;
+    height: 50px;
+	font-size: 150%;
+	padding: 5px;
+	float: left;
+	margin-right: 20px; 
+	text-align: center; 
+}
+
+.step-box-child { margin: 0 90px 0 200px; }
+
+/* ------------------------------------------------------ */
+/* Reviews */
+/* ------------------------------------------------------ */
+
+.customer-review {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/back-customers.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 80px 0;
+}
+
+.reviews {
+	display: flex;
+	justify-content: space-around;
+	padding: 70px 100px;
+}
+
+.reviews p span { font-size: xx-large; }
+
+/* ------------------------------------------------------ */
+/* Price-plans */
+/* ------------------------------------------------------ */
+.section-plans {
+	padding: 50px 0 80px;
+	background-color: #f4f4f4;
+}
+
+.plan-box {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 100px;
+}
+
+.plan-price { font-size: 50px; }
+
+.plan-price span {
+	font-size: 18px;
+	padding-left: 8px;
+}
+
+.plan-price { color: #e67e22; }
+
+.plan-box-child div {
+	background-color: #fff;
+	border: 1px #f4f4f4 solid;
+	margin: 2px 0;
+	padding: 20px;
+}
+
+.plan-box-child div h3 {
+	font-weight: lighter;
+	padding-bottom: 5px;
+}
+
+.plan-price-meal { font-size: medium; }
+
+.plan-box-child div ul li { padding: 5px; }
+
+/*-----------------------------------------------------------*/
+/* Navigation */
+/*-----------------------------------------------------------*/
+
+.main-nav {
+	float: right;
+	margin-right: 8%;
+}
+
+.main-nav li {
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	margin: 50px 15px 0;
+	z-index: 10;
+}
+
+.main-nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+li { list-style: none; }
+
+/*-----------------------------------------------------------*/
+/* Form */
+/*-----------------------------------------------------------*/
+
+.section-form { padding: 80px; }
+.contact-form { padding: 0 0 0 250px; }
+.contact-form div { padding: 7px; }
+
+#name,
+#email,
+#find-us {
+	width: 45%;
+	height: 33px;
+}
+
+#name { margin-left: 20.5%; }
+
+#email { margin-left: 21%; }
+
+#find-us { margin-left: 5.1%; }
+
+#news { margin-left: 15%; }
+
+#messege {
+	margin-left: 12%;
+	height: 83px;
+	width: 420px;
+	margin: 0 0 0 112px;
+}
+
+.line {
+	position: relative;
+	bottom: 55px;
+}
+
+.contact-form div { padding-top: 12px; }
+.contact-form div a {
+	color: #fff;
+	background-color: #e67e22;
+	border: 1px #e67e22 solid;
+	border-radius: 30px;
+	padding: 7px 20px;
+	position: relative;
+	left: 245px;
+}
+
+/*-----------------------------------------------------------*/
+/* Footer */
+/*-----------------------------------------------------------*/
+
+footer { background: #3d3737; }
+footer ul { padding: 60px 0 60px 70px; }
+footer ul li { 
+	display: inline-block;
+	color: rgb(187, 160, 160); 
+	font-weight: lighter;
+	font-size: smaller;
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+}
+
+.social-links { 
+	float: right;
+	position: relative;
+	bottom: 114px;
+	right: 100px;
+}
+
+.social-links i {
+	color: rgb(187, 160, 160); 
+	padding: 0 8px;
+}
+
+footer div p {
+	font-size: smaller;
+	padding: 0 0 3% 35%;
+}
+
+/*--------------- Logo ------------------*/
+#logo {
+	width: 8%;
+	height: auto;
+	margin: 15px 100px 0;
+}
+
+/*-----------------------------------------------------------*/
+/* Button */
+/*-----------------------------------------------------------*/
+
+.btn {
+	font-family: 'Quicksand', sans-serif;
+	display: inline-block;
+    padding: 10px 30px;
+	font-weight: 200px;
+	font-size: large;
+	border-radius: 200px;
+	margin-top: 30px;
+	border: 1px solid #e67e22;
+}
+
+.btn-2 { margin-left: 10px; }
+
+.btn a { color: #e67e22; }
+
+.btn-app img {
+	width: 30%;
+	height: 50px;
+	margin-left: 12px;
+}
+
+.app { margin: 80px 90px 0 200px; }
+
+#main-btn {
+	color: #fff;
+	background-color: #e67e22;
+	border: 1px #e67e22 solid;
+	border-radius: 200px;
+	padding: 10px 30px;
+	text-align: center;
+	margin: 50px;
+}
+
+.plan-box-child div a {
+	color: #e67e22;
+	border: 1px #e67e22 solid;
+	padding: 10px 30px;
+	border-radius: 200px;
+	margin: 50px;
+}
+
+/*------------------- Link -----------------------*/
+a { text-decoration: none; }
+
+.info i a {
+	text-decoration: underline;
+	color: #e67e22;
+}
+/*------------------- Heading --------------------*/
+
+h1,
+h2 {
+	/* color: #fff; */
+	font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 { color: rgb(199, 197, 197); }
+
+.section-plans h1,
+.sections-steps h1,
+.section-cities h1,
+.section-form h1 {
+	color: rgb(34, 29, 29);
+	text-align: center;
+}
+
+.customer-review h1 {
+	color:rgb(255, 255, 255);
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin: 80px 0 5px 0;
+}
+
+/*------------------- Paragraph --------------------*/
+.long-copy {
+	margin-left: 20%;
+	width: 70%;
+	line-height: 145%;
+} 
+
+.box-item p {
+	 margin-top: 10px;
+	 text-align: start;
+	 font-weight: lighter;
+	 font-size: 90%;
+}
+
+figcaption,
+.reviews div p {
+	color: #fff;
+	font-style: italic;
+	font-size: 18px;
+	margin: 10px 22px;
+}
+
+/*------------------- Icon --------------------*/
+.icon-big {
+	font-size: 200%;
+	color: #e67e22;
+}
+
+.icon-small {
+	color: #e67e22;
+	padding-right: 10px;
+}
+
+
+/*------------------- jQuery classess--------------------*/
+
+.myClass {
+	border-bottom: 2px #e67e22 solid;
+	padding-bottom: 10px;
+	transition: border-bottom 0.2s;
+}
+
+
+
